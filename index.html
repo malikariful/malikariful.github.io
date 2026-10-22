@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic website of Md Ariful Islam Malik, PhD candidate in Computer Science at The University of Alabama.">
+  <title>Md Ariful Islam Malik</title>
+  <style>
+    :root{
+      --ink:#1d2733;
+      --muted:#607080;
+      --accent:#8b1e2d;
+      --line:#e6e9ed;
+      --soft:#f7f8fa;
+      --white:#ffffff;
+      --max:1080px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--white);
+      line-height:1.65;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      border-bottom:1px solid var(--line);
+      background:rgba(255,255,255,.96);
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(8px);
+    }
+    .nav{
+      max-width:var(--max);
+      margin:auto;
+      padding:13px 24px;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      align-items:center;
+    }
+    .brand{font-weight:750;letter-spacing:.1px}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.94rem}
+    .hero{
+      max-width:var(--max);
+      margin:auto;
+      padding:64px 24px 38px;
+      display:grid;
+      grid-template-columns:190px 1fr;
+      gap:42px;
+      align-items:start;
+    }
+    .portrait{
+      width:180px;height:180px;
+      border-radius:8px;
+      background:linear-gradient(145deg,#f1f3f5,#e4e8ec);
+      border:1px solid var(--line);
+      display:flex;align-items:center;justify-content:center;
+      font-size:2.1rem;font-weight:750;color:#66717c;
+      overflow:hidden;
+    }
+    .portrait img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:2.55rem;line-height:1.1;margin:2px 0 10px}
+    .subtitle{font-size:1.08rem;color:var(--muted);margin-bottom:18px}
+    .intro{font-size:1.03rem;max-width:760px}
+    .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .pill{
+      display:inline-block;padding:7px 11px;border:1px solid var(--line);
+      border-radius:7px;background:var(--white);font-size:.91rem;color:var(--ink)
+    }
+    .pill:hover{border-color:#c7ccd2;text-decoration:none;background:var(--soft)}
+    main{max-width:var(--max);margin:auto;padding:0 24px 70px}
+    section{padding:34px 0;border-top:1px solid var(--line)}
+    section:first-child{border-top:0}
+    h2{font-size:1.42rem;margin:0 0 20px}
+    h3{font-size:1rem;margin:20px 0 7px}
+    p{margin:8px 0}
+    ul{margin:8px 0 0;padding-left:21px}
+    li{margin:8px 0}
+    .research-grid,.two-col{
+      display:grid;grid-template-columns:1fr 1fr;gap:26px;
+    }
+    .card{
+      border:1px solid var(--line);border-radius:9px;padding:18px 20px;background:var(--soft)
+    }
+    .year{font-weight:700;white-space:nowrap}
+    .entry{
+      display:grid;grid-template-columns:105px 1fr;gap:18px;margin:13px 0
+    }
+    .pub{margin:0 0 14px}
+    .me{font-weight:750}
+    .tag{
+      display:inline-block;background:#f1f3f5;border:1px solid var(--line);
+      border-radius:5px;padding:4px 7px;margin:4px 4px 0 0;font-size:.88rem
+    }
+    footer{
+      border-top:1px solid var(--line);
+      padding:24px;color:var(--muted);text-align:center;font-size:.9rem
+    }
+    @media (max-width:760px){
+      .hero{grid-template-columns:1fr;padding-top:38px}
+      .portrait{width:140px;height:140px}
+      h1{font-size:2.05rem}
+      .research-grid,.two-col{grid-template-columns:1fr}
+      .entry{grid-template-columns:1fr;gap:2px}
+      .nav{align-items:flex-start;flex-direction:column}
+      .navlinks{gap:12px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="brand">Md Ariful Islam Malik</div>
+    <div class="navlinks">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#service">Service</a>
+      <a href="#awards">Awards</a>
+      <a href="assets/Ariful_Malik_CV.docx">CV</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="portrait" title="Replace this block with your headshot">
+    MA
+  </div>
+  <div>
+    <h1>Md Ariful Islam Malik</h1>
+    <div class="subtitle">PhD Candidate in Computer Science · Empirical Software Engineering · Research Software · AI for Software Engineering</div>
+    <p class="intro">
+      I am a PhD candidate in Computer Science at <strong>The University of Alabama</strong>, with expected graduation in May 2027.
+      My research focuses on peer code review in research software, empirical software engineering, and the use of large language models
+      and AI-powered agents in software engineering. Before my doctoral studies, I served as a Lecturer and later Assistant Professor
+      at Bangladesh University of Business and Technology.
+    </p>
+    <div class="links">
+      <a class="pill" href="mailto:mmalik3@crimson.ua.edu">Email</a>
+      <a class="pill" href="https://scholar.google.com/citations?user=VGbThr4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="pill" href="https://orcid.org/0009-0005-0885-5104" target="_blank" rel="noopener">ORCID</a>
+      <a class="pill" href="https://dblp.org/pid/272/9714.html" target="_blank" rel="noopener">DBLP</a>
+      <a class="pill" href="https://www.linkedin.com/in/malikariful/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill" href="assets/Ariful_Malik_CV.docx">Download CV</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="research">
+    <h2>Research</h2>
+    <div class="research-grid">
+      <div class="card">
+        <h3>Research Interests</h3>
+        <span class="tag">Empirical Software Engineering</span>
+        <span class="tag">Research Software</span>
+        <span class="tag">Peer Code Review</span>
+        <span class="tag">Large Language Models</span>
+        <span class="tag">AI4SE</span>
+      </div>
+      <div class="card">
+        <h3>Research Methods</h3>
+        <span class="tag">Survey Design</span>
+        <span class="tag">Semi-structured Interviews</span>
+        <span class="tag">Thematic Analysis</span>
+        <span class="tag">Mixed Methods</span>
+        <span class="tag">Human-subject Evaluation</span>
+        <span class="tag">Repository Mining</span>
+      </div>
+    </div>
+
+    <h3>Research in Progress</h3>
+    <p><strong>AI-Powered Code Review Agents in Research Software</strong></p>
+    <p>
+      I am investigating the types of coding issues identified by AI-powered code review agents in research software pull requests,
+      the extent to which developers act on AI-generated review comments, and the characteristics associated with developer action.
+      A planned extension will examine factors developers report as influencing their decisions through interviews or surveys with
+      original pull-request authors.
+    </p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="pub"><span class="me">Md Ariful Islam Malik</span>, Jeffrey C. Carver, and Nasir U. Eisty.
+      “Peer code review in research software development: The research software engineer perspective.”
+      <em>Empirical Software Engineering</em>, 31(2), 42, 2026.</p>
+
+    <p class="pub"><span class="me">Md Ariful Islam Malik</span>, Jeffrey C. Carver, and Nasir U. Eisty.
+      “Peer code review in research software: Practices, improvements, and implementation challenges from interviews of RSEs.”
+      <em>Practice and Experience in Advanced Research Computing (PEARC)</em>, pp. 1–8, 2026.</p>
+
+    <p class="pub">Md. Amzad Hossain, Istiaque Ahmed Suvo, Amitabh Ray, <span class="me">Md Ariful Islam Malik</span>, and M. F. Mridha.
+      “Number Plate Recognition System for Vehicles using Machine Learning Approach.”
+      <em>International Conference on Innovative Computing and Communication</em>, Springer, 2020.</p>
+
+    <p class="pub">Mahamudul Hasan, Shibbir Ahmed, <span class="me">Md Ariful Islam Malik</span>, and Shabbir Ahmed.
+      “A comprehensive approach towards user-based collaborative filtering recommender system.”
+      <em>International Workshop on Computational Intelligence (IWCI)</em>, IEEE, 2016.</p>
+  </section>
+
+  <section id="posters">
+    <h2>Posters</h2>
+    <p>
+      <span class="me">Md Ariful Islam Malik</span>, Jeffrey C. Carver, and Nasir U. Eisty.
+      “Improving Peer Code Review in Research Software: From RSE Practices to an Ongoing Real-World Study of AI-Assisted Code Review.”
+      <em>US Research Software Engineer Conference (US-RSE)</em>, San Jose, CA, 2026.
+      <a href="https://doi.org/10.5281/zenodo.23467509" target="_blank" rel="noopener">DOI</a>
+    </p>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching & Mentoring</h2>
+    <div class="entry">
+      <div class="year">2019–2021</div>
+      <div><strong>Assistant Professor, BUBT</strong><br>
+        Continued undergraduate computer science teaching and supervised student thesis and project work.
+      </div>
+    </div>
+    <div class="entry">
+      <div class="year">2015–2019</div>
+      <div><strong>Lecturer, BUBT</strong><br>
+        Taught Software Design Pattern, Web Database Programming, Java, C++, C, Data Structures, Database Systems, and Neural Networks.
+      </div>
+    </div>
+    <div class="entry">
+      <div class="year">2021–2022</div>
+      <div><strong>Graduate Teaching Assistant, Boise State University</strong><br>
+        Supported Software Development in C through tutoring, grading, and automated test-suite development for programming assignments.
+      </div>
+    </div>
+    <div class="entry">
+      <div class="year">2015–2021</div>
+      <div><strong>Undergraduate Thesis & Project Supervision</strong><br>
+        Supervised seven undergraduate groups, including one thesis group and six project groups. The supervised thesis resulted in a peer-reviewed publication.
+      </div>
+    </div>
+    <div class="entry">
+      <div class="year">2015–2020</div>
+      <div><strong>Student Advisor, BUBT</strong><br>
+        Advised a cohort of approximately 40 undergraduate students on academic matters.
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards & Honors</h2>
+    <div class="entry">
+      <div class="year">2026</div>
+      <div><strong>Best Student Paper Award, PEARC 2026</strong><br>
+        “Peer Code Review in Research Software: Practices, Improvements, and Implementation Challenges from Interviews of RSEs.”
+      </div>
+    </div>
+    <div class="entry"><div class="year">2026</div><div><strong>Graduate School Travel Grant</strong>, The University of Alabama — PEARC 2026</div></div>
+    <div class="entry"><div class="year">2026</div><div><strong>Graduate School Travel Grant</strong>, The University of Alabama — US-RSE 2026</div></div>
+    <div class="entry"><div class="year">2011</div><div><strong>4th Place</strong>, Intra-Department Programming Competition, University of Dhaka</div></div>
+    <div class="entry"><div class="year">2004</div><div><strong>Government Scholarship</strong>, Grade 8 Countrywide Examination — 2nd position in state, Bangladesh</div></div>
+    <div class="entry"><div class="year">2001</div><div><strong>Government Scholarship</strong>, Grade 5 Countrywide Examination — 1st position in state, Bangladesh</div></div>
+  </section>
+
+  <section id="service">
+    <h2>Professional Service</h2>
+    <div class="entry"><div class="year">2027</div><div><strong>Reviewer</strong>, International Conference on Artificial Intelligence, Computer, Data Sciences, and Applications (ACDSA 2027) — research papers</div></div>
+    <div class="entry"><div class="year">2026</div><div><strong>Sub-reviewer</strong>, International Symposium on Empirical Software Engineering and Measurement (ESEM 2026) — technical paper</div></div>
+    <div class="entry"><div class="year">2026</div><div><strong>Reviewer</strong>, Practice and Experience in Advanced Research Computing (PEARC 2026) — BoF and panel submissions</div></div>
+    <div class="entry"><div class="year">2026</div><div><strong>Reviewer</strong>, US Research Software Engineer Conference (US-RSE 2026) — BoF submissions</div></div>
+  </section>
+
+  <section id="skills">
+    <h2>Research & Technical Skills</h2>
+    <div class="two-col">
+      <div>
+        <h3>Machine Learning / NLP</h3>
+        <p>TensorFlow, PyTorch, Keras, Hugging Face Transformers, NLTK, Gensim, spaCy</p>
+        <h3>Programming</h3>
+        <p>Python, C, C++, Java, Bash</p>
+      </div>
+      <div>
+        <h3>Parallel / HPC</h3>
+        <p>Pthreads, OpenMP, Open MPI, CUDA, Slurm</p>
+        <h3>Software Tools</h3>
+        <p>Git, Make, GoogleTest (gtest), OpenGL</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:mmalik3@crimson.ua.edu">mmalik3@crimson.ua.edu</a> · <a href="mailto:malikariful@gmail.com">malikariful@gmail.com</a></p>
+    <p><strong>Affiliation:</strong> Department of Computer Science, The University of Alabama</p>
+  </section>
+</main>
+
+<footer>
+  © 2026 Md Ariful Islam Malik · Academic website
+</footer>
+</body>
+</html>
